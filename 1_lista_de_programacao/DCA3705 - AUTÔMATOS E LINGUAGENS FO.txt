@@ -1,0 +1,11 @@
+DCA3705 - AUTÔMATOS E LINGUAGENS FORMAIS - T01 (2026.1)
+
+EDSON MACIEL DE BARROS JUNIOR - 20210010250
+
+VIDEO SOLICITADO:
+https://drive.google.com/file/d/1NoVGpWWz83_RbPQMFZRMFX0aZvDZSA4x/view?usp=sharing
+
+CÓDIGO:
+https://github.com/DevMacielJr/automatos-e-linguagens-formais/blob/main/MSF.py
+
+
