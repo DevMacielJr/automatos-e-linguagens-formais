@@ -1,0 +1,53 @@
+import re
+
+def validar_email(email):
+    padrao = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    return re.match(padrao, email) is not None
+
+def validar_telefone(telefone):
+    padrao = r'^\(\d{2}\)\s?\d{4,5}-\d{4}$'
+    return re.match(padrao, telefone) is not None
+
+def validar_cpf(cpf):
+    padrao = r'^\d{3}\.\d{3}\.\d{3}-\d{2}$'
+    return re.match(padrao, cpf) is not None
+
+
+def menu():
+    print("\n=== VALIDADOR DE DADOS ===")
+    print("1 - Validar Email")
+    print("2 - Validar Telefone")
+    print("3 - Validar CPF")
+    print("0 - Sair")
+
+while True:
+    menu()
+    opcao = input("Escolha uma opção: ")
+
+    if opcao == "1":
+        email = input("Digite o email: ")
+        if validar_email(email):
+            print("✅ Email válido!")
+        else:
+            print("❌ Email inválido!")
+
+    elif opcao == "2":
+        telefone = input("Digite o telefone (ex: (84) 99999-9999): ")
+        if validar_telefone(telefone):
+            print("✅ Telefone válido!")
+        else:
+            print("❌ Telefone inválido!")
+
+    elif opcao == "3":
+        cpf = input("Digite o CPF (ex: 123.456.789-00): ")
+        if validar_cpf(cpf):
+            print("✅ CPF válido!")
+        else:
+            print("❌ CPF inválido!")
+
+    elif opcao == "0":
+        print("Encerrando...")
+        break
+
+    else:
+        print("Opção inválida!")
